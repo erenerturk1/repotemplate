@@ -76,17 +76,21 @@
 <body>
   <div id="center">
     <img class="pfp" src="CydiaIcon.png" alt="CydiaIcon" width="100" height="100">
-    <h1 style="color: #fff;">CHANGE THIS repo</h1>
-    <p style="color: #fff;">A place with my open-source, free tweaks.<br/><br/>(Credits: palera1n)</p>
+    <h1 style="color: #fff;">yourname's repo</h1>
+    <p style="color: #fff;">A place with your open-source, free tweaks. (hopefully)<br/><br/>(Credits: palera1n)</p>
   </div>
 
   <div>
     <div class="packagemanager">
-      <a href="sileo://source/https://sourcelocation.github.io/repo" target="_blank"><img id="pm" src="sileo.png"
+      <a href="" target="_blank"><img id="pm" src="sileo.png"
           alt="sileo" width="32" height="32"></a>
       <div class="verticallinebreak"></div>
-      <a href="zbra://sources/add/https://sourcelocation.github.io/repo" target="_blank"><img id="pm" src="zbra.png"
+      <a href="" target="_blank"><img id="pm" src="zbra.png"
           alt="zbra" width="32" height="32"></a>
+      <script>
+        document.querySelector('[alt="sileo"]').href = 'sileo://source/' + location.href
+        document.querySelector('[alt="zbra"]').href = 'zbra://sources/add/' + location.href
+      </script>
     </div>
   </div>
 </body>
